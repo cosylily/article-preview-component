@@ -9,3 +9,21 @@
   font-size: 13px;
   font-family: "Manrope", sans-serif;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--light-grayish-blue);
+  min-height: 100vh;
+}
+h1 {
+  color: var(--dark-grayish-blue);
+}
+main {
+  display: flex;
+  align-self: center;
+  max-width: 50%;
+}
+.right {
+  background-color: white;
+}
