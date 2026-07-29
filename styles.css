@@ -24,6 +24,13 @@ main {
   align-self: center;
   max-width: 50%;
 }
+.left {
+  flex: 1;
+}
 .right {
   background-color: white;
+  flex: 2;
+}
+.left img {
+  width: 100%;
 }
