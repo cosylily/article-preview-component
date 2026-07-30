@@ -18,19 +18,50 @@ body {
 }
 h1 {
   color: var(--dark-grayish-blue);
+  font-size: 1.8em;
+}
+.writer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+.below {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: fit-content;
+}
+.writer img {
+  border-radius: 90px;
+  height: 50px;
+}
+.right p {
+  font-size: 1em;
+}
+.username h2 {
+  font-size: 1.2em;
+  margin: 0px;
+}
+.username p {
+  font-size: 1em;
+  margin: 0px;
+}
+.username {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 main {
   display: flex;
   align-self: center;
   max-width: 50%;
 }
-.left {
-  flex: 1;
-}
+
 .right {
   background-color: white;
-  flex: 2;
+  padding: 30px;
 }
 .left img {
-  width: 100%;
+  max-width: 100%;
 }
