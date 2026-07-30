@@ -38,14 +38,17 @@ h1 {
 }
 .right p {
   font-size: 1em;
+  color: var(--dark-blue);
 }
 .username h2 {
   font-size: 1.2em;
   margin: 0px;
+  color: var(--dark-grayish-blue);
 }
 .username p {
   font-size: 1em;
   margin: 0px;
+  color: var(--grayish-blue);
 }
 .username {
   display: flex;
@@ -61,7 +64,16 @@ main {
 .right {
   background-color: white;
   padding: 30px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 .left img {
   max-width: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.sharebutton {
+  background-color: var(--light-grayish-blue);
+  padding: 10px;
+  border-radius: 30px;
 }
