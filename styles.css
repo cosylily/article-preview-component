@@ -81,8 +81,17 @@ main {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-.sharebutton {
+.sharenow {
   background-color: var(--light-grayish-blue);
   padding: 10px;
-  border-radius: 30px;
+  border-radius: 50px;
+}
+.sharebutton {
+  mask-image: url(./images/icon-share.svg);
+  background-color: var(--dark-blue);
+  height: 20px;
+  width: 20px;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
 }
