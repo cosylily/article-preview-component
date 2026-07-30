@@ -18,7 +18,7 @@ body {
 }
 h1 {
   color: var(--dark-grayish-blue);
-  font-size: 2em;
+  font-size: 2.2em;
 }
 .writer {
   display: flex;
@@ -38,7 +38,7 @@ h1 {
   height: 50px;
 }
 .right p {
-  font-size: 1.3em;
+  font-size: 1.4em;
   color: var(--dark-blue);
 }
 .username h2 {
@@ -68,7 +68,7 @@ main {
 }
 .right {
   background-color: white;
-  padding: 30px 40px;
+  padding: 40px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   flex: 3;
