@@ -95,3 +95,9 @@ main {
   mask-size: contain;
   mask-position: center;
 }
+.sharenow:hover {
+  background-color: var(--dark-blue);
+}
+.sharenow:hover .sharebutton {
+  background-color: white;
+}
