@@ -169,4 +169,7 @@ main {
   .below {
     margin-top: 30px;
   }
+  .popout::after {
+    display: none;
+  }
 }
