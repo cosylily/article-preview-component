@@ -119,6 +119,9 @@ main {
   margin: 0px;
   font-size: 1em;
 }
+.popout a {
+  text-decoration: none;
+}
 .popout::after {
   content: "";
   position: absolute;
