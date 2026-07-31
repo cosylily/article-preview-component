@@ -67,10 +67,10 @@
               <p>28 Jun 2020</p>
             </div>
           </div>
-          <div class="sharenow">
+          <div class="sharenow" id="button" onclick="popIt()">
             <div class="sharebutton"></div>
           </div>
-          <div class="popout">
+          <div class="popout d-none" id="link">
             <p>SHARE</p>
             <img src="./images/icon-facebook.svg" alt="Facebook Icon" />
             <img src="./images/icon-twitter.svg" alt="Twitter Icon" />
@@ -85,5 +85,16 @@
       <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
       Coded by <a href="#">Your Name Here</a>.
     </footer>
+    <script>
+      let shareButton = document.getElementById("button");
+      function popIt() {
+        let shareLink = document.getElementById("link");
+        if (shareLink.classList.contains("d-none")) {
+          shareLink.classList.remove("d-none");
+        } else {
+          shareLink.classList.add("d-none");
+        }
+      }
+    </script>
   </body>
 </html>
