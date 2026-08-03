@@ -172,4 +172,7 @@ main {
   .popout::after {
     display: none;
   }
+  .popout {
+    position: static;
+  }
 }
