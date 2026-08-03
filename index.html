@@ -58,7 +58,7 @@
 
         <div class="below">
           <div class="popout d-none" id="link">
-            <a href="#"><p>SHARE</p></a>
+            <a href="#" class="share"><p>SHARE</p></a>
             <a href=""
               ><img src="./images/icon-facebook.svg" alt="Facebook Icon"
             /></a>
@@ -79,7 +79,7 @@
               <p>28 Jun 2020</p>
             </div>
           </div>
-          <div class="sharenow" id="button" onclick="popIt()">
+          <div class="sharenow" id="button" onclick="checkScreen()">
             <div class="sharebutton"></div>
           </div>
         </div>
@@ -93,19 +93,20 @@
     </footer>
     <script>
       const shareButton = document.getElementById("button");
+      const shareLink = document.getElementById("link");
+      const writerSec = document.getElementById("user");
+      function checkScreen() {
+        var maxwidth = window.matchMedia("(max-width:700px)");
+        function matching() {
+          maxwidth.matches ? notPopit() : popit();
+        }
+      }
+      function notPopit() {}
       function popIt() {
-        const shareLink = document.getElementById("link");
         if (shareLink.classList.contains("d-none")) {
           shareLink.classList.remove("d-none");
         } else {
           shareLink.classList.add("d-none");
-        }
-        var maxwidth = window.matchMedia("(max-width:700px)");
-        var classList = document.getElementById("user").classList;
-        function matching() {
-          maxwidth.matches
-            ? classList.add("d-none")
-            : classList.remove("d-none");
         }
       }
     </script>

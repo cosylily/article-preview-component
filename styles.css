@@ -132,6 +132,9 @@ main {
   border: solid 20px;
   border-color: var(--dark-grayish-blue) transparent transparent transparent;
 }
+.share:hover {
+  color: white;
+}
 .d-none {
   display: none;
 }
