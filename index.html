@@ -69,7 +69,7 @@
               ><img src="./images/icon-pinterest.svg" alt="Pinterest Icon"
             /></a>
           </div>
-          <div class="writer">
+          <div class="writer" id="user">
             <img
               src="./images/avatar-michelle.jpg"
               alt="Michelle Appleton's Profile"
@@ -92,13 +92,20 @@
       Coded by <a href="#">Your Name Here</a>.
     </footer>
     <script>
-      let shareButton = document.getElementById("button");
+      const shareButton = document.getElementById("button");
       function popIt() {
-        let shareLink = document.getElementById("link");
+        const shareLink = document.getElementById("link");
         if (shareLink.classList.contains("d-none")) {
           shareLink.classList.remove("d-none");
         } else {
           shareLink.classList.add("d-none");
+        }
+        var maxwidth = window.matchMedia("(max-width:700px)");
+        var classList = document.getElementById("user").classList;
+        function matching() {
+          maxwidth.matches
+            ? classList.add("d-none")
+            : classList.remove("d-none");
         }
       }
     </script>
