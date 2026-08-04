@@ -56,7 +56,7 @@
           you make any room feel complete.
         </p>
 
-        <div class="below">
+        <div class="below" id="under">
           <div class="popout d-none" id="link">
             <a href="#" class="share"><p>SHARE</p></a>
             <a href=""
@@ -95,13 +95,26 @@
       const shareButton = document.getElementById("button");
       const shareLink = document.getElementById("link");
       const writerSec = document.getElementById("user");
+      const maxwidth = window.matchMedia("(max-width:700px)");
+      const belowSec = document.getElementById("under");
       function checkScreen() {
-        var maxwidth = window.matchMedia("(max-width:700px)");
-        function matching() {
-          maxwidth.matches ? notPopit() : popit();
+        if (maxwidth.matches) {
+          notPopit();
+        } else {
+          popIt();
         }
       }
-      function notPopit() {}
+      function notPopit() {
+        if (writerSec.classList.contains("d-none")) {
+          writerSec.classList.remove("d-none");
+          shareLink.classList.add("d-none");
+          belowSec.classList.remove("background");
+        } else {
+          writerSec.classList.add("d-none");
+          shareLink.classList.remove("d-none");
+          belowSec.classList.add("background");
+        }
+      }
       function popIt() {
         if (shareLink.classList.contains("d-none")) {
           shareLink.classList.remove("d-none");
