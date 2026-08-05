@@ -17,7 +17,6 @@ This is a solution to the [Article preview component challenge on Frontend Mento
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-  - [AI Collaboration](#ai-collaboration)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -53,47 +52,40 @@ Users should be able to:
 
 In this particular project, I learned a lot of new stuff like cropping the image using css, use svg file and able to change its colour, position of css and used ::after for the first time. On top of that, a lot of revision is done for javascript as well. New learning on javascript is on the matching of screensize.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
 ```css
 .proud-of-this-css {
-  color: papayawhip;
+  mask-image: url(./images/icon-share.svg);
+  background-color: var(--dark-blue);
+  height: 20px;
+  width: 20px;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
 }
 ```
 
 ```js
 const proudOfThisFunc = () => {
-  console.log("🎉");
+  const maxwidth = window.matchMedia("(max-width:700px)");
+  function checkScreen() {
+    if (maxwidth.matches) {
+      notPopit();
+    } else {
+      popIt();
+    }
+  }
 };
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+What I would like to really deepen my knowledge in next is how to properly arrange the components and elements to make it visually nice to the viewers. I would love to learn about blank space.
 
 ### Useful resources
 
 - [https://uploadcare.com/blog/how-to-crop-an-image-in-html-and-css/]Never knew that you can always crop the image using CSS which makes everything much simpler.
 - [https://stackoverflow.com/questions/43312042/svg-object-change-color-from-external-css] When SVG is presented as an image file, it might be confusing on how to change the colour of the icon. This is helpful to learn how to do it!
 - [https://www.youtube.com/watch?v=YEmdHbQBCSQ] Coding2Go youtube video explaining positioning using CSS. Easy to understand. -[https://stackoverflow.com/questions/12483178/how-can-i-make-a-triangle-in-html] To make an triangle using borders. An interesting perspective
-
-### AI Collaboration
-
-Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
-
-- What tools did you use (e.g., ChatGPT, Claude, GitHub Copilot)?
-- How did you use them (e.g., debugging, generating boilerplate, brainstorming solutions)?
-- What worked well? What didn't?
-
-**Note: Delete this note and the content above if you didn't use AI, or replace with your own experience.**
 
 ## Author
 
